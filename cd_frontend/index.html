@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="coursedig">
+<head>
+
+	<meta charset="UTF-8">
+	<base href="/coursedig/cd_frontend/">
+	<title data-ng-bind="'Course Dig | ' + $state.current.data.pageTitle"></title>
+	<meta name="description" content="Nigeria's only website for Nigeria Higher Institutions Courses and Professional Trainings">
+	<meta name="keywords" content="Nigeria,Africa,Higher,Insitutions,Courses,Professional,Trainings,Universities,University,College,School,Education,Teacher,Professor,Student">
+
+	<link rel="icon" type="image/gif" href="assets/images/favicon.ico">
+</head>
+
+<body ng-controller="BaseController">
+	
+	
+	<div class="my-content-here">
+		<h3>This body content section - cd_frontend/index.html</h3>
+		<div data-ng-include="'views/common/header.html'"></div>
+
+		<main class="main">
+			<h3>This body content section - cd_frontend/index.html</h3>
+			<ui-view></ui-view>
+		</main>
+		
+		<div data-ng-include="'views/common/footer.html'"></div>
+	</div>
+
+
+	<!-- <h1>{{msg}}</h1> -->
+	
+
+
+	
+	<!--JQUERY STUFF START-->
+	<!--JQUERY STUFF END-->
+	
+
+	<!-- ANGULARJS MODULES START-->
+	<script src="assets/ng/angular.min.js" type="text/javascript"></script>	
+
+	<!-- ANGULARJS MODULES START-->
+
+		
+	<!-- BEGIN APP LEVEL ANGULARJS SCRIPTS -->
+	<script src="app.js" type="text/javascript"></script>
+
+	<script src="routes.js" type="text/javascript"></script>
+
+	<!-- ANGULARJS SERVICES -->
+	<script src="assets/ng/angular-ui-router.min.js" type="text/javascript"></script>	
+	<!-- ANGULARJS SERVICES -->
+
+	<!-- ANGULARJS CONSTANTS START-->
+	<script src="constants/titles.js" type="text/javascript"></script>	
+	<!-- ANGULARJS CONSTANTS END -->
+
+	<!-- ANGULARJS INTERCEPTORS -->
+	<!-- ANGULARJS FILTERS -->
+	
+
+	<!-- ANGULARJS DIRECTIVES -->
+	<!-- ANGULARJS DIRECTIVES -->
+
+	<!-- ANGULARJS CONTROLLERS -->
+	<script src="controllers/BaseController.js" type="text/javascript"></script>
+	<!-- ANGULARJS CONTROLLERS -->
+
+	<!-- END APP LEVEL ANGULARJS SCRIPTS -->
+</body>
+</html>
